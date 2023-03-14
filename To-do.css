@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+#heading-div {
+  background-color: beige;
+  padding: 15px;
+}
+#heading {
+  color: #000000;
+  font-family: monospace;
+  font-size: 40px;
+  text-align: center;
+  margin: 10px;
+}
+#To-do-list {
+  margin-top: 50px;
+  height: 100vh;
+}
+#task-input {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 5px 5px 5px 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-family: monospace;
+  font-size: 20px;
+}
+#addTask-button {
+  margin: 5px;
+  cursor: pointer;
+  background-color: #abef9c;
+  border: 2px solid #111;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 2px 20px;
+}
+#addTask-button:hover {
+  background-color: rgb(93, 233, 93);
+}
+#task-div-container {
+  display: flex;
+}
+#Incomplete-task-list {
+  font-family: monospace;
+  font-size: 20px;
+  margin: 30px 10px;
+  padding: 5px;
+  flex: 1;
+}
+#Completed-task-list {
+  font-family: monospace;
+  font-size: 20px;
+  margin: 30px 10px;
+  padding: 5px;
+  flex: 1;
+}
+.breadcrumb {
+  display: block;
+  font-size: 2rem;
+  font-family: monospace;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.breadcrumb-label {
+  cursor: pointer;
+}
+li {
+  list-style:none;
+  margin: 2px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  background-color: antiquewhite;
+  
+}
+
+.add-subtask-btn {
+  font-size: large;
+  padding: 0px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.task-name-span{
+
+}
+
+.task-name-label {
+  font-family: monospace;
+  font-size: 1rem;
+  margin: 5px;
+  word-wrap: break-word;
+}
+.edit-btn {
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px;
+  font-family: sans-serif;
+  width: 50px;
+  background-color: rgb(240, 233, 114);
+  cursor: pointer;
+}
+
+.save-btn {
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px;
+  font-family: sans-serif;
+  width: 50px;
+  background-color: rgb(114, 240, 124);
+  cursor: pointer;
+}
+
+.remove-btn {
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px;
+  font-family: sans-serif;
+  background-color: rgb(243, 95, 95);
+  width: 70px;
+  cursor: pointer;
+}
+
+.remove-btn:hover{
+  background-color: rgb(255, 6, 6);
+}
+
+.Complete-btn {
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px;
+  font-family: sans-serif;
+  background-color: rgb(88, 114, 232);
+  width: 100px;
+  cursor: pointer;
+}
+
+.Complete-btn:hover{
+  background-color: rgb(41, 41, 242);
+}
+
+.Incomplete-btn {
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px;
+  font-family: sans-serif;
+  background-color: rgb(88, 114, 232);
+  width: 100px;
+  cursor: pointer;
+}
+
+.Incomplete-btn:hover{
+  background-color: rgb(41, 41, 242);
+}
+
+@media screen and (max-width: 381px) {
+  #To-do-list{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
